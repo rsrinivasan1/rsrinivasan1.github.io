@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="/dist/output.css" rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<nav class="px-2 sm:px-4 py-1 bg-slate-800 flex justify-start navbar">
+			<div
+				class="container flex flex-wrap items-center justify-between mx-auto"
+			>
+				<a href="/src/" class="flex">
+					<span
+						class="font-raleway font-semibold text-2xl text-white"
+					>
+						Raghav &hairsp;
+					</span>
+					<span
+						class="font-raleway font-semibold text-2xl text-orange-300"
+					>
+						Srinivasan</span
+					>
+				</a>
+				<button
+					data-collapse-toggle="navbar-default"
+					type="button"
+					class="inline-flex rounded items-center p-2 ml-3 text-sm text-gray-500 -lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
+					aria-controls="navbar-default"
+					aria-expanded="false"
+					id="dropdown-button"
+				>
+					<span class="sr-only">Open main menu</span>
+					<svg
+						class="w-6 h-6"
+						aria-hidden="true"
+						fill="currentColor"
+						viewBox="0 0 20 20"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+							clip-rule="evenodd"
+						></path>
+					</svg>
+				</button>
+				<div
+					class="hidden w-full md:block md:w-auto"
+					id="navbar-default"
+				>
+					<ul
+						class="flex flex-col p-4 mt-4 -lg md:flex-row md:space-x-8 md:mt-0 md:text-sm font-medium md:border-0 bg-slate-800 border-gray-700"
+					>
+						<li>
+							<a
+								href="#"
+								class="menu-option text-base rounded block py-2 pl-3 pr-4 hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:p-0 text-yellow-300 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+								id="home"
+								>Home</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="menu-option text-base rounded block py-2 pl-3 pr-4 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+								id="experiences"
+								>Experiences</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="menu-option text-base rounded block py-2 pl-3 pr-4 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+								id="projects"
+								>Projects</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="menu-option text-base rounded block py-2 pl-3 pr-4 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+								id="coursework"
+								>Coursework</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="menu-option text-base rounded block py-2 pl-3 pr-4 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+								id="contact"
+								>Contact</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="bg-image"></div>
+		<div class="blurred"></div>
+		<div id="header-container">
+			<h1 id="header"></h1>
+			<h2 id="subtext"></h2>
+		</div>
+		<div id="about-me-container" class="bg-slate-700">
+			<img
+				id="profile-pic"
+				src="/images/profile_pic.png"
+				alt="profile picture"
+			/>
+			<div id="about-me-text-box">
+				<p id="about-me">
+					I enjoy hands-on experiences and seek to learn as much as
+					possible about software development! Some of the fields I'm
+					interesting in exploring are machine learning, cloud
+					development, web technologies, and mobile development.
+					<!-- In my free time, I enjoy practicing typing, building new
+					projects, and playing Team Fortress 2. -->
+				</p>
+			</div>
+			<img
+				id="toronto-pic"
+				src="/images/IMG_5172.jpg"
+				alt="picture of Toronto"
+			/>
+		</div>
+
+		<div id="about-me-text-box-2" class="bg-slate-700">
+			<p>
+				I enjoy hands-on experiences and seek to learn as much as
+				possible about software development! Some of the fields I'm
+				interesting in exploring are machine learning, cloud
+				development, web technologies, and mobile development.
+				<!-- In my free time, I enjoy practicing typing, building new
+				projects, and playing Team Fortress 2. -->
+			</p>
+		</div>
+		<h1 class="experiences">Experiences</h1>
+		<div id="experiences-container" class="bg-white py-4">
+			<div class="px-6 py-4">
+				<div class="mt-4 mb-12 pb-2 border-b-2 border-gray-300">
+					<img
+						src="/images/onymos_logo.jpeg"
+						alt="Onymos logo"
+						class="logo"
+					/>
+					<h3 class="text-3xl pt-2 my-2 font-bold text-slate-700">
+						Software Engineering Intern
+					</h3>
+					<div class="text-xl my-1 text-gray-500 font-semibold">
+						Onymos
+					</div>
+					<div class="text-md mt-0 text-gray-400 mb-4">
+						Jul 2022 - Aug 2022
+					</div>
+					<ul>
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Learned the basics of the following frameworks:
+							Ionic, React Native, and Swift for mobile app
+							development
+						</li>
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Built three applications with each framework to
+							showcase the functionality of the company's services
+						</li>
+
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Wrote a blog that was featured on the Onymos
+							website, which can be found
+							<a
+								class="text-orange-300 underline"
+								href="https://onymos.com/whats-it-like-working-at-onymos/"
+								>here</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="mt-4 mb-12 pb-2 border-b-2 border-gray-300">
+					<img
+						src="/images/medcvr.png"
+						alt="MCVR logo"
+						class="logo"
+					/>
+					<h3 class="text-3xl pt-4 my-2 font-bold text-slate-700">
+						Undergraduate Researcher
+					</h3>
+					<div class="text-xl my-1 text-gray-500 font-semibold">
+						Medical Computer Vision and Robotics Lab
+					</div>
+					<div class="text-md mt-0 text-gray-400 mb-4">
+						Apr 2022 - Jun 2022
+					</div>
+					<ul>
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Worked closely with the Medical Robotics team under
+							Professor Lueder Kahrs
+						</li>
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Implemented a ROS (Robot Operating System)
+							publisher-subscriber system to send servo-control
+							info
+						</li>
+
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Simulated Franka Emika robot motion and tested joint
+							control for an attached surgical tool in Unity,
+						</li>
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Employed inverse kinematics using the
+							<a
+								class="text-orange-300 underline"
+								href="https://github.com/petercorke/robotics-toolbox-python"
+								>Robotics Toolbox for Python</a
+							>
+							to calculate joint angles and operate the physical
+							robot
+						</li>
+					</ul>
+				</div>
+				<div class="mt-4 mb-12 pb-2 border-b-2 border-gray-300">
+					<img
+						src="/images/sharonrec.png"
+						alt="Sharon Rec logo"
+						class="logo"
+					/>
+					<h3 class="text-3xl pt-4 my-2 font-bold text-slate-700">
+						Sailing Instructor
+					</h3>
+					<div class="text-xl my-1 text-gray-500 font-semibold">
+						Sharon Recreation Department
+					</div>
+					<div class="text-md mt-0 text-gray-400 mb-4">
+						Jun 2021 - Aug 2021
+					</div>
+					<ul>
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Instructed groups of thirty sailors in sailing
+							techniques in preparation for high school team
+						</li>
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Conducted organized swim tests and oversaw camper
+							safety as Red Cross certified lifeguard
+						</li>
+
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Worked to create lessons, teach technical sailing
+							skills, and assess sailing proficiency
+						</li>
+					</ul>
+				</div>
+
+				<div class="mt-4 mb-12 pb-2 border-b-2 border-gray-300">
+					<img src="/images/rsm.png" alt="RSM logo" class="logo" />
+					<h3 class="text-3xl pt-4 my-2 font-bold text-slate-700">
+						Math Tutor
+					</h3>
+					<div class="text-xl my-1 text-gray-500 font-semibold">
+						Russian School of Mathematics
+					</div>
+					<div class="text-md mt-0 text-gray-400 mb-4">
+						Oct 2019 - Mar 2020
+					</div>
+					<ul>
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Trained students in one-on-one math sessions:
+							algebra, geometry, and trigonometry
+						</li>
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Engaged with instructors to teach relevant skills to
+							help students catch up in class
+						</li>
+
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Assisted in the organization of math-themed
+							festivities for holidays and fun events
+						</li>
+					</ul>
+				</div>
+				<div class="mt-4 mb-12 pb-2 border-b-2 border-gray-300">
+					<img
+						src="/images/az.png"
+						alt="AstraZeneca logo"
+						class="logo"
+					/>
+					<h3 class="text-3xl pt-4 my-2 font-bold text-slate-700">
+						Emerging Scientist Program Intern
+					</h3>
+					<div class="text-xl my-1 text-gray-500 font-semibold">
+						AstraZeneca
+					</div>
+					<div class="text-md mt-0 text-gray-400 mb-4">
+						Jul 2019 - Aug 2019
+					</div>
+					<ul>
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Worked with mentors to identify protein-molecule
+							interactions and synthesize drug substitute for
+							acetaminophen
+						</li>
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Collaborated with peers to research effectiveness of
+							common drugs on natural illnesses
+						</li>
+
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Presented findings to numerous senior executives
+							including the VP of Oncology Discovery
+						</li>
+					</ul>
+				</div>
+				<div class="mt-4 mb-8">
+					<img
+						src="/images/mos.png"
+						alt="Museum of Science logo"
+						class="logo"
+					/>
+					<h3 class="text-3xl pt-4 my-2 font-bold text-slate-700">
+						Summer Youth Volunteer
+					</h3>
+					<div class="text-xl my-1 text-gray-500 font-semibold">
+						Museum of Science
+					</div>
+					<div class="text-md mt-0 text-gray-400 mb-4">
+						Jul 2019 - Aug 2019
+					</div>
+					<ul>
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Assisted museum visitors with hands-on engineering
+							design activities at the Engineering Design Workshop
+						</li>
+						<li
+							class="bullet text-md text-slate-500 font-medium mb-3"
+						>
+							Led demonstrations on engineering concepts and
+							principles to groups of children and adults
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h1 class="experiences">Projects</h1>
+	</body>
+</html>
