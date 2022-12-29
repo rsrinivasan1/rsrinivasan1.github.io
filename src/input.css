@@ -7,6 +7,9 @@
 :root {
 	--navbarHeight: 0px;
 	--backgroundHeight: max(50vh, 20rem);
+	--vid1Width: 100%;
+	--vid2Width: 100%;
+	--vid3Width: 100%;
 }
 
 body {
@@ -14,11 +17,10 @@ body {
 }
 
 .bg-image {
-	background-image: url("/images/bg.JPG");
+	background-image: url("/media/bg.JPG");
 
 	/* Full height */
 	position: fixed;
-	/* height: calc(var(--backgroundHeight) + 5vw); */
 	height: 100vh;
 	width: 100vw;
 	z-index: -100;
@@ -27,26 +29,13 @@ body {
 	background-position-y: 40%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/* clip-path: polygon(
-		0 0,
-		0 calc(var(--backgroundHeight) - var(--navbarHeight) + 1vw),
-		100vw calc(var(--backgroundHeight) - var(--navbarHeight) + 6vw),
-		100vw 0
-	); */
 }
 .blurred {
 	position: fixed;
-	/* height: calc(var(--backgroundHeight) + 5vw); */
 	height: 100vh;
 	width: 100vw;
 	z-index: -99;
 	backdrop-filter: blur(4px);
-	/* clip-path: polygon(
-		0 0,
-		0 calc(var(--backgroundHeight) - var(--navbarHeight) + 1vw),
-		100vw calc(var(--backgroundHeight) - var(--navbarHeight) + 6vw),
-		100vw 0
-	); */
 }
 
 .navbar {
@@ -130,6 +119,35 @@ h2 {
 	clip-path: polygon(0 0, 0 80vw, 100vw calc(80vw + 5vw), 100vw 5vw);
 }
 
+.project1 {
+	max-width: 237.5px;
+	max-height: 500px;
+	width: 100%;
+	height: calc(var(--vid1Width) * 500 / 237.5);
+}
+
+.project2 {
+	max-width: 600px;
+	max-height: 530px;
+	width: 100%;
+	height: calc(var(--vid2Width) * 530 / 600);
+}
+
+.project3 {
+	max-width: 480px;
+	max-height: 360px;
+	width: 100%;
+	height: calc(var(--vid3Width) * 360 / 480);
+}
+
+.project-row {
+	flex-direction: column;
+}
+
+.project-info {
+	max-width: 50rem;
+}
+
 @media only screen and (min-width: 640px) {
 	h1 {
 		font-size: max(7vh, 3.5rem);
@@ -169,6 +187,9 @@ h2 {
 	#about-me {
 		font-size: min(2vw, 1.5rem);
 	}
+	.project-row {
+		flex-direction: row;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -197,11 +218,20 @@ h2 {
 	}
 }
 
-.experiences {
+.section-title {
 	padding: 10vh 0 10vh 0;
 }
 
 #experiences-container {
+	padding: 5vw 5vw 5vw 5vw;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: start;
+	clip-path: polygon(0 0, 0 calc(100% - 5vw), 100vw 100%, 100vw 5vw);
+}
+
+#projects-container {
 	padding: 5vw 5vw 5vw 5vw;
 	display: flex;
 	flex-direction: column;
@@ -218,13 +248,3 @@ h2 {
 	margin-left: 1rem;
 	list-style-type: disc;
 }
-
-/* 
-.typed-cursor {
-	font-size: 4rem;
-	opacity: 1;
-	-webkit-animation: blink 0.7s infinite;
-	-moz-animation: blink 0.7s infinite;
-	animation: blink 0.7s infinite;
-	color: white;
-} */
