@@ -302,7 +302,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="mt-4 mb-8">
+				<div class="mt-4 mb-12">
 					<img
 						src="/media/mos.png"
 						alt="Museum of Science logo"
@@ -333,7 +333,7 @@
 		<h1 class="section-title">Projects</h1>
 		<div id="projects-container" class="bg-slate-700 py-4">
 			<div class="px-6 py-4">
-				<div class="mt-4 mb-8 pb-8 border-b-2 border-slate-500">
+				<div class="mt-4 mb-8 border-b-2 border-slate-500">
 					<div class="project-row flex">
 						<div class="pr-8 project-info">
 							<h3 class="text-3xl my-2 font-bold text-white">
@@ -361,7 +361,7 @@
 									users to determine their compatibility
 								</li>
 								<li class="bullet text-md text-slate-300 mb-3">
-									Programmed the match creation system, which
+									Built the match creation system, which
 									checks for matches and opens a chat window
 									between two users if they have liked each
 									other
@@ -406,7 +406,7 @@
 							</form>
 						</div>
 						<video
-							class="project1 rounded-2xl"
+							class="project1 rounded-2xl mb-8"
 							width="285"
 							height="600"
 							controls
@@ -414,7 +414,7 @@
 						></video>
 					</div>
 				</div>
-				<div class="mt-4 mb-8 pb-8 border-b-2 border-slate-500">
+				<div class="mt-4 mb-8 border-b-2 border-slate-500">
 					<div class="project-row flex">
 						<div class="pr-8 project-info">
 							<h3 class="text-3xl my-2 font-bold text-white">
@@ -430,27 +430,38 @@
 							</div>
 							<ul>
 								<li class="bullet text-md text-slate-300 mb-3">
-									Worked with a team to build a social
-									networking Android application inspired by
-									Tinder
+									Built an exhaustive Discord meme storage bot
+									deployed on an EC2 instance, with media
+									links stored in DynamoDB
 								</li>
 								<li class="bullet text-md text-slate-300 mb-3">
-									Implemented the compatibility algorithm,
-									which assigns each user a score based on
-									their interests to the account setup
-									questionnaire, and compares the scores of
-									users to determine their compatibility
+									Used Pycord, a fork of Discord.py, as a
+									Discord API wrapper, and Boto3, an AWS SDK
+									for Python, to interact with the database
 								</li>
 								<li class="bullet text-md text-slate-300 mb-3">
-									Programmed the match creation system, which
-									checks for matches and opens a chat window
-									between two users if they have liked each
-									other
+									Implemented optical character recognition
+									using Pytesseract in order to easily
+									retrieve memes with forgotten keywords
+								</li>
+								<li class="bullet text-md text-slate-300 mb-3">
+									Utilized Pillow, an image processing
+									library, to process images before OCR for
+									better accuracy
+								</li>
+								<li class="bullet text-md text-slate-300 mb-3">
+									Checked for duplicate media links before
+									addition by hashing each image through the
+									ImageHash library
+								</li>
+								<li class="bullet text-md text-slate-300 mb-3">
+									Actively used on a private Discord server
+									with more than 2700 memes!
 								</li>
 							</ul>
 							<form
 								class="pt-4"
-								action="https://github.com/CSC207-2022F-UofT/course-project-group-80"
+								action="https://github.com/rsrinivasan1/Discord-Meme-Bot"
 								target="_blank"
 							>
 								<button
@@ -477,7 +488,7 @@
 							</form>
 						</div>
 						<video
-							class="project2 rounded-lg"
+							class="project2 rounded-lg mb-8"
 							width="600"
 							height="530"
 							controls
@@ -485,14 +496,82 @@
 						></video>
 					</div>
 				</div>
-
-				<video
-					class="project3 rounded-lg"
-					width="480"
-					height="360"
-					controls
-					src="/media/flood_medium_demo.mov"
-				></video>
+				<div class="mt-4">
+					<div class="project-row flex">
+						<div class="pr-8 project-info">
+							<h3 class="text-3xl my-2 font-bold text-white">
+								Flood
+							</h3>
+							<div
+								class="text-xl my-1 text-gray-300 font-semibold"
+							>
+								Personal Project
+							</div>
+							<div class="text-md text-gray-400 mb-4">
+								Mar 2020 - Sep 2020
+							</div>
+							<ul>
+								<li class="bullet text-md text-slate-300 mb-3">
+									Created a top-down endless runner where the
+									player controls a vehicle that must stay
+									ahead of a flood that advances progressively
+									faster
+								</li>
+								<li class="bullet text-md text-slate-300 mb-3">
+									Built three levels: easy involves walls that
+									barely slow the player on contact, medium
+									involves walls that significantly slow the
+									player, and hard involves walls that bounce
+									the player backward into certain peril
+								</li>
+								<li class="bullet text-md text-slate-300 mb-3">
+									Implemented a randomly generated infinite
+									track, where the path consists of sequential
+									Bezier curves that are tangent to each other
+									for a seamless transition
+								</li>
+								<li class="bullet text-md text-slate-300 mb-3">
+									Produced in-game graphics using the Java
+									Abstract Window Toolkit (AWT)
+								</li>
+							</ul>
+							<form
+								class="pt-4"
+								action="https://github.com/rsrinivasan1/Flood"
+								target="_blank"
+							>
+								<button
+									type="submit"
+									class="text-white bg-[#24292F]/80 hover:bg-[#24292F] focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 mr-2 mb-8"
+								>
+									<svg
+										class="mr-2 -ml-1 w-4 h-4"
+										aria-hidden="true"
+										focusable="false"
+										data-prefix="fab"
+										data-icon="github"
+										role="img"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 496 512"
+									>
+										<path
+											fill="currentColor"
+											d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+										></path>
+									</svg>
+									Learn more
+								</button>
+							</form>
+						</div>
+						<video
+							class="project3 rounded-lg mb-8"
+							width="480"
+							height="360"
+							controls
+							src="/media/flood_medium_demo.mov"
+						></video>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>

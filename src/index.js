@@ -8,6 +8,7 @@ updateDimensions = () => {
 	let root = document.querySelector(":root");
 	root.style.setProperty("--navbarHeight", navbarHeight + "px");
 	console.log(navbarHeight);
+
 	let vid1 = document.querySelector(".project1");
 	let vid2 = document.querySelector(".project2");
 	let vid3 = document.querySelector(".project3");
