@@ -265,7 +265,7 @@ h2 {
 }
 
 .contact-container {
-	padding: 5vw 5vw 5vw 5vw;
+	padding: 5vw 5vw 3vw 5vw;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
