@@ -12,9 +12,10 @@
 	--vid3Width: 480px;
 }
 
-/* html {
-	scroll-behavior: smooth;
-} */
+html {
+	visibility: visible;
+	opacity: 1;
+}
 
 body {
 	overscroll-behavior: none;

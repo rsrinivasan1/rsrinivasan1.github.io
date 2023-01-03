@@ -1,17 +1,6 @@
 let navbarHeight = 0;
 let scrollingTo = "";
 
-let domReady = (cb) => {
-	document.readyState === "interactive" || document.readyState === "complete"
-		? cb()
-		: document.addEventListener("DOMContentLoaded", cb);
-};
-
-domReady(() => {
-	// Display body when DOM is loaded
-	document.body.style.visibility = "visible";
-});
-
 updateDimensions = () => {
 	let navbar = document.querySelector(".navbar");
 	let button = document.querySelector("#dropdown-button");
