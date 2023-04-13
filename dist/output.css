@@ -578,6 +578,11 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
@@ -1083,7 +1088,7 @@ h2 {
   max-width: 100vw;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 440px) {
   #contact-button-container {
     flex-direction: row;
   }
