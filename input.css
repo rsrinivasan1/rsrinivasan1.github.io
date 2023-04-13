@@ -173,7 +173,7 @@ h2 {
 .project-info {
 	max-width: 100vw;
 }
-@media only screen and (min-width: 350) {
+@media only screen and (min-width: 400px) {
 	#contact-button-container {
 		flex-direction: row;
 	}
