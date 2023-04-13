@@ -18,7 +18,10 @@ html {
 }
 
 body {
+	-webkit-overscroll-behavior: none;
+	-moz-overscroll-behavior: none;
 	overscroll-behavior: none;
+	overflow-x: hidden;
 }
 
 .bg-image {
@@ -106,6 +109,13 @@ h2 {
 	font-weight: 500;
 	text-align: center;
 	color: white;
+}
+
+#end-text {
+	margin-top: 3vh;
+	font-size: 1em;
+	font-weight: 500;
+	text-align: center;
 }
 
 #about-me-text-box-2 {
