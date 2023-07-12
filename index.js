@@ -43,7 +43,7 @@ window.onload = () => {
 	let options2 = {
 		strings: [
 			"I'm a CS Specialist at UofT.",
-			"I'm an international student.",
+			"I'm an American studying in Canada.",
 			"I'm a software developer.",
 			"I'm a typeracer addict.",
 			"I'm a casual gamer.",
@@ -59,6 +59,7 @@ window.onload = () => {
 
 	const dropdown = document.getElementById("dropdown-button");
 	const dropdownMenu = document.getElementById("navbar-default");
+	const open2024 = document.getElementById("open2024");
 
 	for (const elem of menuOptionsArray) {
 		elem.addEventListener("click", () => {

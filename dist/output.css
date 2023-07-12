@@ -1198,6 +1198,11 @@ h2 {
   }
 }
 
+#open2024 {
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+
 .section-title {
   padding: 10vh 0 10vh 0;
   scroll-margin-top: calc(var(--navbarHeight) - 0.5vh);
@@ -1264,6 +1269,11 @@ h2 {
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-orange-200:hover{
+  --tw-text-opacity: 1;
+  color: rgb(254 215 170 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus{

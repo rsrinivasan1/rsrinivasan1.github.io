@@ -261,6 +261,11 @@ h2 {
 	}
 }
 
+#open2024 {
+	margin-top: 2vh;
+	margin-bottom: 1vh;
+}
+
 .section-title {
 	padding: 10vh 0 10vh 0;
 	scroll-margin-top: calc(var(--navbarHeight) - 0.5vh);

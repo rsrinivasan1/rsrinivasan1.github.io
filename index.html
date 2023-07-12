@@ -119,12 +119,19 @@
 				alt="profile picture"
 			/>
 			<div id="about-me-text-box">
-				<p id="about-me">
-					I enjoy hands-on experiences and seek to learn as much as
-					possible about software development! Some of the fields I'm
+				<div id="about-me" class="flex-col">
+					I enjoy hands-on experiences - some of the fields I'm
 					interesting in exploring are machine learning, cloud
 					development, web technologies, and mobile development.
-				</p>
+					<div id="open2024">
+						<a
+							href="#contact-section"
+							class="text-orange-300 underline hover:text-orange-200"
+						>
+							Open to Summer 2024 Co-op Opportunities!
+						</a>
+					</div>
+				</div>
 			</div>
 			<img
 				id="toronto-pic"
@@ -134,17 +141,25 @@
 		</div>
 
 		<div id="about-me-text-box-2" class="bg-slate-700">
-			<p>
+			<div class="flex-col">
 				I enjoy hands-on experiences and seek to learn as much as
 				possible about software development! Some of the fields I'm
 				interesting in exploring are machine learning, cloud
 				development, web technologies, and mobile development.
-			</p>
+				<p id="open2024">
+					<a
+						href="#contact-section"
+						class="text-orange-300 underline"
+					>
+						Open to Summer 2024 Co-op Opportunities!
+					</a>
+				</p>
+			</div>
 		</div>
 		<h1 class="section-title" id="experiences-section">Experiences</h1>
 		<div class="bg-white section-container">
 			<div class="px-6">
-                <div class="mt-4 mb-8 pb-2 border-b-2 border-gray-300">
+				<div class="mt-4 mb-8 pb-2 border-b-2 border-gray-300">
 					<img
 						src="/media/fidelity.png"
 						alt="Fidelity logo"
@@ -899,7 +914,7 @@
 						<button
 							type="submit"
 							class="text-white bg-[#24292F]/80 hover:bg-[#24292F] focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 my-3 text-center inline-flex items-center dark:focus:ring-gray-500 mx-4"
-                            onclick="window.open('https://github.com/rsrinivasan1', '_blank')"
+							onclick="window.open('https://github.com/rsrinivasan1', '_blank')"
 						>
 							<svg
 								class="mr-2 w-4 h-4"
@@ -918,6 +933,7 @@
 							</svg>
 							Github
 						</button>
+					</button>
 				</div>
 				<p id="webpage-end-text" class="text-slate-400">
 					~ Website designed by myself ~
